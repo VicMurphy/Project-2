@@ -1,0 +1,227 @@
+/*========================================
+        B A S I C   L A Y O U T
+========================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding-top: 35px;
+}
+
+h1, h2 {
+  font-family: 'Luckiest Guy', cursive;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  color: #333;
+}
+
+.name {
+  display: block;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+.main-nav li {
+  display: block;
+  background-color: white;
+  margin: 10px 0;
+  align-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+.main-nav li a {
+  padding: 10px 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.primary {
+  width: 90%;
+  margin: 0 auto;
+}
+.primary img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.column{
+  padding: 25px 0;
+  width: 90%;
+}
+
+.secondary {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+.secondary h2 {
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 5px 0;
+}
+.card h3{
+  text-align: center;
+}
+.card img{
+  width: 100%;
+  align-content: center;
+}
+
+footer {
+ padding: 0 25px 50px 25px;
+}
+
+#contact {
+  margin: 50px auto;
+}
+#contact p {
+  width: 80%;
+  margin: 13px auto;
+}
+
+.divider {
+  margin: 0px 0px 25px 0;
+  border: .5px solid #d9d9d9;
+}
+
+.bottom-nav{
+  margin: 0 auto;
+}
+.bottom-nav p {
+  float: left;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.bottom-nav h3 {
+  float: right;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#skills {
+  margin: 50px auto;
+}
+.list {
+  text-align: left;
+  margin: 0 auto
+}
+.list li {
+}
+
+
+
+
+
+/*========================================
+        M E D I A   Q U E R I E S
+========================================*/
+
+@media (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    margin: 10px 7px;
+  }
+  .primary {
+    vertical-align: middle;
+  }
+  .primary p {
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-right: 10px;
+ }
+  .primary img {
+    float: right;
+    width: 40%;
+  }
+  .card {
+    width: 40%;
+    display: inline-block;
+    margin: 30px 25px;
+  }
+  .bottom-nav p {
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .name {
+    float: left;
+  }
+  .main-nav {
+    float: right;
+  }
+  .main-nav ul {
+    width: 100%;
+  }
+  .main-nav li {
+    float: left;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .card{
+    width: 30%;
+    margin: 10px;
+  }
+}
+
+
+
+
+
+
+
+/*========================================
+            C L E A R F I X
+========================================*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
